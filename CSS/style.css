@@ -1,0 +1,236 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+background-color: #ffeac3;
+}
+
+/* Header */
+.navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+
+
+.headerLogo{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+}
+.headerMenu{
+    color: white;
+    
+}
+.headerMenu:hover {
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px #070707;
+}
+
+
+
+/* Section 1 */
+div.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.masthead-subheading{
+    color: #000000;
+    -webkit-text-stroke: 2px rgba(0,0,0,.15);
+    text-shadow:5px 5px 2.5px rgba(0, 0, 0, 0.23);
+}
+.masthead-heading{
+    color: rgb(0, 0, 0);
+    text-shadow:5px 5px 2.5px rgba(0, 0, 0, 0.23);
+}
+
+
+.text-center {
+    text-align: center!important;
+}
+div.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+
+
+
+
+/* Section Desayunos */
+.titleDesayunos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    font-weight: 800;
+    text-shadow: 4px 4px 2px #141414;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(#ffeac3, #ffccc3); 
+    background-size: 70% 2px, auto;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+.card{
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.23));
+}
+.card-body{
+    background-color: #c3d8ff;
+}
+.card-title{
+    color: #0a0a0a;
+    font-weight: 700;
+}
+.card-text{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.card-img-top{
+    height: 350px;
+} 
+
+
+
+/* Section Nosotros */
+.titleNosotros{
+    color: #000000;
+    font-family:'Signika', sans-serif ;
+    font-size: 50px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px rgba(0,0,0,.15)
+  
+}
+
+.sectionNosotros{
+    background-color: #c3d8ff;
+}
+.containerInfo{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.informacion {
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    padding: 3rem;
+    border-bottom: solid 5px #1e7172;
+}
+.imagenNosotros{
+    max-width: 100%;
+    height: 390px;
+    vertical-align: middle;
+}
+
+/* Section Contacto */
+.contacto {
+    background-image: url(../images/fondoContacto.jpg);
+    height: auto;
+}
+
+.card-body-contacto{
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+}
+.form-group{
+    margin: 10px 0px;
+}
+
+.btn-coffee, .btn-coffee--white {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 17px;
+    border: 2px #ffffff solid;
+    border-radius: .25rem;
+    background-color: #000000;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    margin: 10px 0px;
+}
+.btn-coffee--white:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #b0967c;
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    background:#ffccc3;
+    width: 100%;
+    height: 200px;
+}
+.logoFooter{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+.footerIcons{
+    width:70px;
+  height:70px;
+  border-radius: 70px;
+  box-shadow:10px 10px 5px rgba(0, 0, 0, 0.23);
+}
+.footerDesarrollador{
+    width: 300px;
+  height: 200px;
+}
